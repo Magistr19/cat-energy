@@ -17,8 +17,19 @@
     </div>
 <div class="page-header__container">
   <header class="page-header">
-    <div class="header-logo"></div>
-    <button class="toggle-nav"></button>
+    <div class="page-header__container">
+      <a class="page-header__logo-link">
+        <picture>
+          <source media="(min-width: $desktop-size)" srcset="logo-desktop.svg">
+          <source media="(min-width: $tablet-size)" srcset="logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Логотип">
+        </picture>
+        <img src="img/logo-text.svg" alt="Cat energy">
+      </a>
+      <button class="toggle-nav">
+        <span class="screen-reader">Открыть навигацию</span>
+      </button>
+    </div>
     <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a>Главная</a></li>
@@ -30,7 +41,7 @@
   <section class="promo">
     <h1 class="promo__title">Функциональное питание для котов</h1>
     <b class="promo__info">Занялся собой? Займись котом!</b>
-    <a href="form.html" class="promo__link">Подобрать программу</a>
+    <a href="form.html" class="promo__link">Подобор программы</a>
   </section>
 </div>
 
