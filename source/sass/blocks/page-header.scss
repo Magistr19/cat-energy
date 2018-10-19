@@ -1,0 +1,35 @@
+.page-header {
+  box-sizing: border-box;
+  min-width: $mobile-size;
+  max-width: $mobile-size-max;
+  margin: 0 auto;
+
+  background-color: $bg-white;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 66px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+.page-header__logo-link {
+  display: flex;
+  justify-content: space-between;
+  width: calc(50% + 51px);
+
+  transition: opacity 0.2s ease-in;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+

@@ -1,0 +1,49 @@
+.main-nav {
+  display: none;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  display: flex;
+  align-items: center;
+  min-height: 66px;
+
+  border-bottom: 1px solid #e6e6e6;
+
+  a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 6.25%;
+    padding-left: 6.25%;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 66px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: $font-color-black;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: opacity 0.2s ease-in;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+/* No-js */
+.no-js {
+  .main-nav {
+    display: block;
+  }
+}
