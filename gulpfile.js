@@ -132,8 +132,8 @@ gulp.task("sprite", function() {
     .pipe(gulp.dest("./build/img"));
 });
 
-/* Таск для копирования */
-gulp.task("copy", function() {
+/* Таск для копирования шрифтов */
+gulp.task("copy-fonts", function() {
   return gulp.src([
   "./source/fonts/**/*.{woff,woff2}"/*,
   "./source/img/**"*/
@@ -153,7 +153,12 @@ gulp.task("clean-images", function() {
   return del("./build/img/**/*.{png,jpg,svg,webp}");
 });
 
-/* Запуск всех тасков работы с изображениями*/
+/* Удаление всех шрифтов */
+gulp.task("clean-fonts", function() {
+  return del("./build/fonts/**/*.{woff,woff2}");
+});
+
+/* Таск для отслеживания изображений */
 gulp.task("images-watch", function() {
   run(
     "clean-images",
@@ -164,11 +169,20 @@ gulp.task("images-watch", function() {
     );
 });
 
+/* Таск для отслеживания шрифтов */
+gulp.task("fonts-watch", function() {
+  run(
+    "clean-fonts",
+    "copy-fonts",
+    "html"     /* Это чтобы перезагрузить страничку */
+    );
+});
+
 /* Таск компиляции всего проекта(npm run build) */
 gulp.task("build", function(done) {
   run(
     "clean",
-    "copy",
+    "copy-fonts",
     "style",
     "scripts",
     "images",
@@ -197,4 +211,5 @@ gulp.task("serve", function() {
   gulp.watch("source/*.html", ["html"]);
   gulp.watch("source/js/*.js", ["scripts"]);
   gulp.watch("source/img/**/*.{png,jpg,svg,webp}", ["images-watch"]);
+  gulp.watch("source/fonts/**/*.{woff,woff2}", ["fonts-watch"]);
 });
