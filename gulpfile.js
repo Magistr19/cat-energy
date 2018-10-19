@@ -79,11 +79,11 @@ gulp.task("html", function() {       /* название таска*/
 gulp.task("style", function() {
   gulp.src(["./source/sass/style.scss", "./source/sass/blocks/**/*.scss"])
     .pipe(plumber())
+    .pipe(concat("style.min.css"))
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(concat("style.min.css"))
     .pipe(minify({
       restructure: false          /*Отключаем смешивание общих стилей, чтобы не страдать*/
     }))
