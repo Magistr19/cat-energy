@@ -1,35 +1,38 @@
-.toggle-nav {
-  @include btn-reset;
+@media (min-width: $mobile-size) and (max-width: $mobile-size-max) {
 
-  position: relative;
+  .toggle-nav {
+    @include btn-reset;
 
-  display: block;
-  width: 24px;
-  height: 18px;
+    position: relative;
 
-  background: transparent;
-  border: none;
-  transition: opacity 0.1s ease-in;
+    display: block;
+    width: 24px;
+    height: 18px;
 
-  &:hover {
-    opacity: 0.5;
-  }
+    background: transparent;
+    border: none;
+    transition: opacity 0.1s ease-in;
 
-  &:active {
-    opacity: 0.3;
-  }
+    &:hover {
+      opacity: 0.5;
+    }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+    &:active {
+      opacity: 0.3;
+    }
 
-    width: 100%;
-    height: 2px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
 
-    background-color: #222222;
-    box-shadow: 0 8px 0 0 #222222,
-    0 16px 0 0 #222222;
+      width: 100%;
+      height: 2px;
+
+      background-color: #222222;
+      box-shadow: 0 8px 0 0 #222222,
+      0 16px 0 0 #222222;
+    }
   }
 }

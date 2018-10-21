@@ -1,60 +1,63 @@
-.promo__greenbg-container {
-  position: relative;
+@media (min-width: $mobile-size) and (max-width: $mobile-size-max) {
 
-  box-sizing: border-box;
-  min-width: $mobile-size;
-  max-width: $mobile-size-max;
-  height: 305px;
-  margin: 0 auto;
-  padding-right: 6.25%;
-  padding-left: 6.25%;
+  .promo__greenbg-container {
+    position: relative;
 
-  background-color: #63a73a;
-  background-image: url("../img/promo-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}
+    box-sizing: border-box;
+    min-width: $mobile-size;
+    max-width: $mobile-size-max;
+    height: 305px;
+    margin: 0 auto;
+    padding-right: 6.25%;
+    padding-left: 6.25%;
 
-.promo__title {
-  @include h-reset;
+    background-color: #63a73a;
+    background-image: url("../img/promo-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 
-  padding-top: 29px;
+  .promo__title {
+    @include h-reset;
 
-  font-size: 36px;
-  line-height: 36px;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: $font-color-white;
-}
+    padding-top: 29px;
 
-.promo__info {
-  @include p-reset;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: $font-color-white;
+  }
 
-  display: block;
-  margin-top: 27px;
+  .promo__info {
+    @include p-reset;
 
-  font-size: 14px;
-  line-height: 14px;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: $font-color-white;
-  text-transform: uppercase;
-}
+    display: block;
+    margin-top: 27px;
 
-.promo__img {
-  position: absolute;
-  left: calc(50% - 140px);
-  bottom: -132px;
-}
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: $font-color-white;
+    text-transform: uppercase;
+  }
 
-.promo__btn-container {
-  display: flex;
-  align-items: flex-end;
-  box-sizing: border-box;
-  min-width: $mobile-size;
-  max-width: $mobile-size-max;
-  min-height: 175px;
-  margin: 0 auto;
-  padding-right: 6.25%;
-  padding-left: 6.25%;
+  .promo__img {
+    position: absolute;
+    left: calc(50% - 140px);
+    bottom: -132px;
+  }
+
+  .promo__btn-container {
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    min-width: $mobile-size;
+    max-width: $mobile-size-max;
+    min-height: 175px;
+    margin: 0 auto;
+    padding-right: 6.25%;
+    padding-left: 6.25%;
+  }
 }

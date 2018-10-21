@@ -1,49 +1,105 @@
-.main-nav {
-  display: none;
-}
+@media (min-width: $mobile-size) and (max-width: $mobile-size-max) {
+  .main-nav {
+    display: none;
+  }
 
-.main-nav__list {
-  @include list-reset;
-}
+  .main-nav__list {
+    @include list-reset;
+  }
 
-.main-nav__item {
-  display: flex;
-  align-items: center;
-  min-height: 66px;
+  .main-nav__item {
+    display: flex;
+    align-items: center;
+    min-height: 66px;
 
-  border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
 
-  a {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    padding-right: 6.25%;
-    padding-left: 6.25%;
+    a {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      padding-right: 6.25%;
+      padding-left: 6.25%;
 
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 66px;
-    font-family: "Oswald", Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: $font-color-black;
-    text-transform: uppercase;
-    text-decoration: none;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 66px;
+      font-family: "Oswald", Arial, Helvetica, sans-serif;
+      text-align: center;
+      color: $font-color-black;
+      text-transform: uppercase;
+      text-decoration: none;
 
-    transition: opacity 0.2s ease-in;
+      transition: opacity 0.2s ease-in;
 
-    &[href]:hover {
-      opacity: 0.6;
+      &[href]:hover {
+        opacity: 0.6;
+      }
+
+      &[href]:active {
+        opacity: 0.3;
+      }
     }
+  }
 
-    &[href]:active {
-      opacity: 0.3;
+  /* No-js */
+  .no-js {
+    .main-nav {
+      display: block;
     }
   }
 }
 
-/* No-js */
-.no-js {
+@media (min-width: $tablet-size) {
   .main-nav {
-    display: block;
+    width: 62.146%;
+  }
+
+  .main-nav__list {
+    @include list-reset;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    a {
+      font-size: 18px;
+      line-height: 24px;
+      font-family: "Oswald", Arial, Helvetica, sans-serif;
+      color: $font-color-black;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      transition: opacity 0.2s ease-in;
+
+      &[href]:hover {
+        opacity: 0.6;
+      }
+
+      &[href]:active {
+        opacity: 0.3;
+      }
+
+      &[href]:focus {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .main-nav__item--current {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -7px;
+      left: 0;
+
+      height: 2px;
+
+      background-color: #68b738;
+    }
   }
 }
