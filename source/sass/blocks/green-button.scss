@@ -32,3 +32,9 @@
     outline: none;
   }
 }
+
+@media (min-width: $tablet-size) {
+  .green-button {
+    width: 245px;
+  }
+}
