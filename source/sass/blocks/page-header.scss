@@ -4,8 +4,6 @@
     min-width: $mobile-size;
     max-width: $mobile-size-max;
     margin: 0 auto;
-
-    background-color: $bg-white;
   }
 
   .page-header__container {
@@ -40,16 +38,15 @@
   .page-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
     min-width: $tablet-size;
     max-width: $tablet-size-max;
     min-height: 66px;
     margin: 0 auto;
-    align-items: center;
-    padding-left: 3.9%;
+    margin-top: 24px;
     padding-right: 3.9%;
-
-    background-color: $bg-white;
+    padding-left: 3.9%;
   }
 
   .page-header__logo-text {
@@ -58,5 +55,33 @@
 
   .toggle-nav {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .page-header {
+    position: relative;
+
+    min-width: $desktop-size;
+    max-width: 100%;
+    margin-top: 54px;
+    padding-right: 7.64%;
+    padding-left: 7.64%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -54px;
+      right: 0;
+      z-index: -1;
+
+      width: 50%;
+      height: 697px;
+
+      background-color: #64a83b;
+      background-image: url("../img/promo-bg-desktop.jpg");
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
   }
 }

@@ -11,32 +11,39 @@
 
 /* oswald-500 - cyrillic_latin */
 @font-face {
-  font-family: 'Oswald';
-  font-style: normal;
   font-weight: 500;
-  src: local('Oswald Medium'), local('Oswald-Medium'),
-       url('../fonts/oswald-v16-cyrillic_latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/oswald-v16-cyrillic_latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: "Oswald";
+  font-style: normal;
+
+  src: local("Oswald Medium"), local("Oswald-Medium"),
+  url("../fonts/oswald-v16-cyrillic_latin-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/oswald-v16-cyrillic_latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 
 .screen-reader {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
+  position: absolute !important;
+
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+
+  border: 0 !important;
+
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 body {
+  min-width: $mobile-size;
   margin: 0;
   padding: 0;
 
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: $bg-white;
 }

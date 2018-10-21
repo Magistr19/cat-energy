@@ -103,3 +103,23 @@
     }
   }
 }
+
+@media (min-width: $desktop-size) {
+  .main-nav {
+    width: 39.34%;
+  }
+
+  .main-nav__item {
+    a {
+      font-size: 20px;
+      line-height: 25px;
+      color: $font-color-white;
+    }
+  }
+
+  .main-nav__item--current {
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+}

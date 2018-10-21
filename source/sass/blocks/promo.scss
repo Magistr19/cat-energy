@@ -130,3 +130,44 @@
     margin-left: 12.712%;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .promo {
+    margin-top: 100px;
+  }
+
+  .promo__greenbg-container {
+    min-width: $desktop-size;
+    max-width: 100%;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+
+  .promo__title {
+    margin-left: 6.8%;
+  }
+
+  .promo__info {
+    margin-left: 6.8%;
+  }
+
+  .promo__img {
+    top: -100px;
+    left: 50%;
+
+    width: 552px;
+    height: 499px;
+    margin-left: -159px;
+  }
+
+  .promo__btn-container {
+    min-width: $desktop-size;
+    max-width: 100%;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+
+  .promo__link {
+    margin-left: 6.8%;
+  }
+}
