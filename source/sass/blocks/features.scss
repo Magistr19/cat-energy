@@ -1,0 +1,145 @@
+.features {
+  box-sizing: border-box;
+  min-width: $mobile-size;
+  max-width: $mobile-size-max;
+  padding-right: 6.25%;
+  padding-left: 6.25%;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__item {
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-right: 11.25%;
+  padding-bottom: 18px;
+  padding-left: 6.25%;
+
+  background-color: $bg-gray;
+}
+
+.features__title {
+  @include h-reset;
+
+  position: relative;
+
+  padding-left: 72px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  color: $font-color-black;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 2px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item:nth-child(1) .features__title {
+  &::after {
+    top: -11px;
+    left: 14px;
+
+    width: 35px;
+    height: 49px;
+
+    background-image: url(../img/feature-1.svg);
+  }
+}
+
+.features__item:nth-child(2) .features__title {
+  &::after {
+    top: 5px;
+    left: -9px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url(../img/feature-2.svg);
+  }
+}
+
+.features__description {
+  margin-top: 29px;
+  padding-bottom: 21px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.features__link {
+  position: relative;
+
+  display: inline-block;
+  margin-top: 4px;
+  padding-right: 36px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  color: $font-color-black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1.5px);
+    right: 5px;
+
+    width: 19px;
+    height: 3px;
+
+    background-color: #3e4242;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 5.5px);
+    right: 0;
+
+    border: 5.5px solid transparent;
+    border-right-width: 0;
+    border-left-width: 6px;
+    border-left-color: #3e4242;
+  }
+}
