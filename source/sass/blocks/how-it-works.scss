@@ -1,0 +1,52 @@
+.how-it-works {
+  box-sizing: border-box;
+  min-width: $mobile-size;
+  max-width: $mobile-size-max;
+  margin: 0 auto;
+  margin-top: 18px;
+  padding-right: 6.25%;
+  padding-left: 6.25%;
+}
+
+.how-it-works__title {
+  @include h-reset;
+}
+
+.how-it-works__list {
+  @include list-reset;
+
+  margin-top: 28px;
+}
+
+.how-it-works__item {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  margin-top: 26px;
+  padding-left: 80px;
+
+  background-repeat: no-repeat;
+
+  p {
+    @include p-reset;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.how-it-works__item:nth-child(1) {
+  background-image: url("../img/how-it-works-1.jpg");
+}
+
+.how-it-works__item:nth-child(2) {
+  background-image: url("../img/how-it-works-2.jpg");
+}
+
+.how-it-works__item:nth-child(3) {
+  background-image: url("../img/how-it-works-3.jpg");
+}
+
+.how-it-works__item:nth-child(4) {
+  background-image: url("../img/how-it-works-4.jpg");
+}
