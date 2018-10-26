@@ -5,4 +5,9 @@
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   text-align: left;
   color: $font-color-black;
+
+  @media (min-width: $tablet-size) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

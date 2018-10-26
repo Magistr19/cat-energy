@@ -5,6 +5,7 @@
   margin: 0 auto;
   margin-top: 18px;
   padding-right: 6.25%;
+  padding-bottom: 42px;
   padding-left: 6.25%;
 }
 
@@ -20,7 +21,8 @@
 
 .how-it-works__item {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   min-height: 60px;
   margin-top: 26px;
   padding-left: 80px;
@@ -49,4 +51,70 @@
 
 .how-it-works__item:nth-child(4) {
   background-image: url("../img/how-it-works-4.jpg");
+}
+
+@media (min-width:$tablet-size) {
+  .how-it-works {
+    min-width: $tablet-size;
+    max-width: $tablet-size-max;
+    margin-top: 44px;
+    padding-right: 3.91%;
+    padding-bottom: 40px;
+    padding-left: 3.91%;
+
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .how-it-works__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 47px;
+  }
+
+  .how-it-works__item {
+    box-sizing: border-box;
+    width: 45.76%;
+    padding-top: 113px;
+    padding-right: 11.3%;
+    padding-left: 0;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .how-it-works__item:nth-child(1) {
+    background-image: url("../img/how-it-works-1-tablet.jpg");
+  }
+
+  .how-it-works__item:nth-child(2) {
+    background-image: url("../img/how-it-works-2-tablet.jpg");
+  }
+
+  .how-it-works__item:nth-child(3) {
+    background-image: url("../img/how-it-works-3-tablet.jpg");
+  }
+
+  .how-it-works__item:nth-child(4) {
+    background-image: url("../img/how-it-works-4-tablet.jpg");
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .how-it-works {
+    min-width: $desktop-size;
+    max-width: 100%;
+    padding-right: 7.64%;
+    padding-bottom: 0;
+    padding-left: 7.64%;
+
+    border-bottom: none;
+  }
+
+  .how-it-works__item {
+    width: 20.08%;
+    padding-right: 0;
+  }
 }

@@ -53,7 +53,8 @@
 
   .promo__btn-container {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
     box-sizing: border-box;
     min-width: $mobile-size;
     max-width: $mobile-size-max;
@@ -66,8 +67,8 @@
 
 @media (min-width: $tablet-size) {
   .promo {
+    min-height: 784px;
     margin-top: 50px;
-    min-height: 810px;
   }
 
   .promo__greenbg-container {
@@ -134,8 +135,8 @@
 
 @media (min-width: $desktop-size) {
   .promo {
-    margin-top: 100px;
     min-height: 480px;
+    margin-top: 100px;
   }
 
   .promo__greenbg-container {

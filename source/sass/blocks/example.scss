@@ -1,0 +1,153 @@
+.example {
+  box-sizing: border-box;
+  min-width: $mobile-size;
+  max-width: $mobile-size-max;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-right: 6.25%;
+  padding-bottom: 36px;
+  padding-left: 6.25%;
+
+  background-color: $bg-gray;
+}
+
+.example__title {
+  @include h-reset;
+}
+
+.example__info {
+  @include p-reset;
+
+  margin-top: 25px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.examples__results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.example__result-container {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 44.29%;
+  height: 56px;
+
+  border: 1px solid #cdcdcd;
+}
+
+.example__name {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: $font-color-black;
+}
+
+.example__description {
+  position: absolute;
+  bottom: -12px;
+  left: calc(50% - 42px);
+
+  display: block;
+  width: 84px;
+
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+
+  background-color: #f2f2f2;
+}
+
+.example__cost {
+  display: block;
+  width: 100%;
+  margin-top: 34px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__demonstration-container {
+  margin-top: 35px;
+}
+
+.example__image-container {
+  position: relative;
+
+  line-height: 0;
+}
+
+.example__image-before {
+  display: block;
+  margin: 0 auto;
+}
+
+.example__image-after {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 90px);
+
+  display: none;
+  margin: 0 auto;
+}
+
+.example__slider-container {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 26px;
+}
+
+.example__toogle {
+  @include btn-reset;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+}
+
+.example__range {
+  position: relative;
+
+  align-self: center;
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 3px;
+
+    width: 35px;
+    height: 6px;
+
+    background: #68b738;
+    border-radius: 3px;
+  }
+}
