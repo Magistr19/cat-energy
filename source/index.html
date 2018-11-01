@@ -84,35 +84,41 @@
   </section>
 
   <section class="example">
-    <h2 class="section-title example__title">Живой пример</h2>
-    <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-    <div class="examples__results">
-      <div class="example__result-container">
-        <b class="example__name">5 кг</b>
-        <span class="example__description">снижение веса</span>
+    <div class="example__text-container">
+      <h2 class="section-title example__title">Живой пример</h2>
+      <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <div class="examples__results">
+        <div class="example__result-container">
+          <b class="example__name">5 кг</b>
+          <span class="example__description">снижение веса</span>
+        </div>
+        <div class="example__result-container">
+          <b class="example__name">60 дней</b>
+          <span class="example__description">затрачено времени</span>
+        </div>
+        <span class="example__cost">Затраты на питание:<br> 15 000 руб.</span>
       </div>
-      <div class="example__result-container">
-        <b class="example__name">60 дней</b>
-        <span class="example__description">затрачено времени</span>
-      </div>
-      <span class="example__cost">Затраты на питание: 15 000 руб.</span>
     </div>
     <div class="example__demonstration-container">
       <div class="example__image-container">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/example-1-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/example-1-tablet.png">
-          <img class="example__image-before" src="img/example-1-mobile.png" alt="Пример полного кота">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/example-2-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/example-2-tablet.png">
-          <img class="example__image-after" src="img/example-2-mobile.png" alt="Пример худого кота">
-        </picture>
+        <div class="example__image-before-container">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/example-1-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/example-1-tablet.png">
+            <img class="example__image-before" src="img/example-1-mobile.png" alt="Пример полного кота">
+          </picture>
+        </div>
+        <div class="example__image-after-container">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/example-2-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/example-2-tablet.png">
+            <img class="example__image-after" src="img/example-2-mobile.png" alt="Пример худого кота">
+          </picture>
+        </div>
       </div>
       <div class="example__slider-container">
         <button class="example__toogle">Было</button>
-        <div class="example__range"></div>
+        <div class="example__range" tabindex="0"></div>
         <button class="example__toogle">Стало</button>
       </div>
     </div>
