@@ -379,3 +379,79 @@
     }
   }
 }
+
+@media (min-width: $desktop-size) {
+  .example {
+    display: flex;
+    justify-content: space-between;
+    min-width: $desktop-size;
+    max-width: 100%;
+    margin-top: 260px;
+    padding-top: 70px;
+    padding-right: 7.64%;
+    padding-bottom: 0;
+    padding-left: 7.64%;
+
+    background-color: $bg-gray;
+  }
+
+  .example__text-container {
+    position: relative;
+
+    width: 435px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .example__title {
+    position: absolute;
+    top: -218px;
+    left: 0;
+  }
+
+  .example__info {
+    margin-top: 0;
+  }
+
+  .examples__results {
+    margin-top: 70px;
+  }
+
+  .example__result-container {
+    width: 162px;
+  }
+
+  .example__description {
+    background-color: $bg-gray;
+  }
+
+  .example__cost {
+    margin-top: 60px;
+    margin-left: 0;
+
+    br {
+      display: none;
+    }
+  }
+
+  .example__cost-summ {
+    margin-left: 59px;
+  }
+
+  .example__demonstration-container {
+    width: 650px;
+    margin-top: 0;
+  }
+
+  .example__image-container {
+    margin-top: -260px;
+  }
+
+  .example__image-before-container {
+    background-image: linear-gradient(to bottom, #ffffff 190px, $bg-gray 190px);
+  }
+
+  .example__slider-container {
+    bottom: 135px;
+  }
+}
