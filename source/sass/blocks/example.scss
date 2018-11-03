@@ -387,7 +387,7 @@
     justify-content: space-between;
     min-width: $desktop-size;
     max-width: 100%;
-    margin-top: 260px;
+    margin-top: 275px;
     padding-top: 70px;
     padding-right: 7.64%;
     padding-bottom: 0;
@@ -406,7 +406,7 @@
 
   .example__title {
     position: absolute;
-    top: -218px;
+    top: -208px;
     left: 0;
   }
 
@@ -441,6 +441,7 @@
 
   .example__demonstration-container {
     width: 650px;
+    height: 395px;
     margin-top: 0;
   }
 
@@ -453,6 +454,6 @@
   }
 
   .example__slider-container {
-    bottom: 135px;
+    bottom: 70px;
   }
 }
