@@ -3,6 +3,10 @@
     display: none;
   }
 
+  .main-nav--open {
+    display: block;
+  }
+
   .main-nav__list {
     @include list-reset;
   }

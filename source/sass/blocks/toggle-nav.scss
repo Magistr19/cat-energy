@@ -1,5 +1,4 @@
 @media (max-width: $mobile-size-max) {
-
   .toggle-nav {
     @include btn-reset;
 
@@ -11,6 +10,7 @@
 
     background: transparent;
     border: none;
+
     transition: opacity 0.1s ease-in;
 
     &:hover {
@@ -33,6 +33,35 @@
       background-color: #222222;
       box-shadow: 0 8px 0 0 #222222,
       0 16px 0 0 #222222;
+    }
+  }
+
+  .toggle-nav--open {
+    width: 18px;
+    height: 18px;
+
+    &::before {
+      top: 7px;
+      left: -3px;
+
+      width: 22px;
+
+      background-color: #000000;
+      box-shadow: none;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -3px;
+
+      width: 22px;
+      height: 2px;
+
+      background-color: #000000;
+      transform: rotate(-45deg);
     }
   }
 }
