@@ -60,7 +60,7 @@
     box-sizing: border-box;
     min-width: $mobile-size;
     max-width: $mobile-size-max;
-    min-height: 175px;
+    height: 175px;
     margin: 0 auto;
     padding-right: 6.25%;
     padding-left: 6.25%;
@@ -145,15 +145,15 @@
     min-width: $desktop-size;
     max-width: 100%;
     padding-right: 110px;
-    padding-left: 110px;
+    padding-left: calc(50% - 532px);
   }
 
   .promo__title {
-    margin-left: 6.8%;
+    margin-left: 0;
   }
 
   .promo__info {
-    margin-left: 6.8%;
+    margin-left: 0;
   }
 
   .promo__img {
@@ -173,6 +173,6 @@
   }
 
   .promo__link {
-    margin-left: 6.8%;
+    margin-left: calc(50% - 532px);
   }
 }
