@@ -83,21 +83,13 @@
 }
 
 @media (min-width: $desktop-size) {
-  .page-header {
-    position: relative;
-
-    min-width: $desktop-size;
-    max-width: $desktop-size;
-    margin-top: 54px;
-    padding-right: 40px;
-    padding-left: 40px;
-
+  .page-wrapper {
     &::after {
       content: "";
       position: absolute;
-      top: -54px;
+      top: 0;
       right: 0;
-      z-index: -1;
+      z-index: -2;
 
       width: 50%;
       height: 697px;
@@ -105,8 +97,17 @@
       background-color: #64a83b;
       background-image: url("../img/promo-bg-desktop.jpg");
       background-repeat: no-repeat;
-      background-position: top right;
+      background-position: top right -70px;
     }
+  }
+
+  .page-header {
+    position: relative;
+
+    width: $desktop-size;
+    margin-top: 54px;
+    padding-right: $desktop-side-indent;
+    padding-left: $desktop-side-indent;
   }
 
   .inner-page .page-header {
