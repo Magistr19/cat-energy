@@ -34,11 +34,26 @@
   }
 }
 
+.green-button--form-sbmt {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @media (min-width: $tablet-size) {
   .green-button {
     width: 245px;
     height: 52px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .green-button--form-sbmt {
+    width: 283px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .green-button--form-sbmt {
+    width: 570px;
   }
 }

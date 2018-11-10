@@ -1,0 +1,106 @@
+.input-radio {
+  input {
+    position: absolute !important;
+
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    overflow: hidden;
+
+    border: 0 !important;
+
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  label {
+    position: relative;
+
+    padding-left: 46px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+
+    transition: opacity 0.3s ease-in;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 0;
+
+      display: block;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+
+      border: 1px solid #cecece;
+      border-radius: 50%;
+
+      transition: border-color 0.3s ease-in;
+    }
+
+    &:hover::before {
+      border-color: #bbbbbb;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 9px;
+
+      width: 12px;
+      height: 12px;
+
+      background-color: #68b738;
+      border-radius: 50%;
+      opacity: 0;
+
+      transition: opacity 0.3s ease-in;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  input:focus + label {
+    &::before {
+      border-color: #bbbbbb;
+    }
+  }
+
+  input:checked + label {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .input-radio {
+    label {
+      padding-left: 60px;
+
+      font-size: 20px;
+      line-height: 20px;
+
+      &::before {
+        width: 40px;
+        height: 40px;
+      }
+
+      &::after {
+        width: 18px;
+        height: 18px;
+        left: 11px;
+        top: 8px;
+      }
+    }
+  }
+}

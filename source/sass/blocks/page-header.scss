@@ -28,6 +28,11 @@
       opacity: 0.8;
     }
 
+    &[href]:focus {
+      outline: none;
+      opacity: 0.8;
+    }
+
     &[href]:active {
       opacity: 0.6;
     }
@@ -53,6 +58,21 @@
     padding-left: 3.9%;
   }
 
+  .page-header__logo-link {
+    &[href]:hover {
+      opacity: 0.8;
+    }
+
+    &[href]:focus {
+      outline: none;
+      opacity: 0.8;
+    }
+
+    &[href]:active {
+      opacity: 0.6;
+    }
+  }
+
   .page-header__logo-text {
     display: none;
   }
@@ -67,10 +87,10 @@
     position: relative;
 
     min-width: $desktop-size;
-    max-width: 100%;
+    max-width: $desktop-size;
     margin-top: 54px;
-    padding-right: 3.08%;
-    padding-left: 3.08%;
+    padding-right: 40px;
+    padding-left: 40px;
 
     &::after {
       content: "";
@@ -86,6 +106,12 @@
       background-image: url("../img/promo-bg-desktop.jpg");
       background-repeat: no-repeat;
       background-position: top right;
+    }
+  }
+
+  .inner-page .page-header {
+    &::after {
+      content: none;
     }
   }
 

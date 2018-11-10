@@ -1,0 +1,144 @@
+.label-input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  label {
+    flex-shrink: 0;
+    margin-right: 15px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  input,
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 40px;
+    height: 45px;
+    padding-right: 40px;
+    padding-left: 15px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+    border: 1px solid #e6e6e6;
+
+    transition: border-color 0.3 ease-in;
+
+    &::placeholder {
+      color: #444444;
+
+      opacity: 1;
+    }
+
+    &:hover {
+      border-color: #cdcdcd;
+    }
+
+    &:active {
+      border-width: 2px;
+      border-color: #444444;
+    }
+
+    &:focus {
+      border-width: 2px;
+      border-color: #444444;
+    }
+  }
+}
+
+.label-input--email {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    pointer-events: none;
+  }
+
+  input:focus + svg {
+    fill: #68b738;
+  }
+}
+
+.label-input--tel {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+
+    pointer-events: none;
+  }
+
+  input:focus + svg {
+    fill: #68b738;
+  }
+}
+
+.label-input--textarea {
+  textarea {
+    height: 150px;
+    padding-top: 11px;
+    resize: none;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .label-input {
+    label {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    input,
+    textarea {
+      height: 52px;
+      padding-left: 18px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .label-input--email {
+    svg {
+      top: 20px;
+      right: 21px;
+    }
+  }
+
+  .label-input--tel {
+    svg {
+      top: 17px;
+      right: 17px;
+    }
+  }
+
+  .label-input--textarea {
+    textarea {
+      height: 174px;
+      padding-top: 11px;
+      padding-right: 10px;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .label-input--email,
+  .label-input--tel {
+    width: 46.72%;
+  }
+}

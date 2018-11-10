@@ -384,24 +384,31 @@
 
 @media (min-width: $desktop-size) {
   .example {
-    display: flex;
-    justify-content: space-between;
     min-width: $desktop-size;
     max-width: 100%;
     margin-top: 269px;
     padding-top: 70px;
-    padding-right: 3.08%;
     padding-bottom: 0;
-    padding-left: 3.08%;
 
     background-color: $bg-gray;
+  }
+
+  .example__wrapper {
+    min-width: $desktop-size;
+    max-width: $desktop-size;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .example__text-container {
     position: relative;
 
     width: 435px;
-    margin-right: 0;
+    margin-right: 145px;
     margin-left: 0;
   }
 

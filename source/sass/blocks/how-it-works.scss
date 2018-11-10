@@ -127,10 +127,10 @@
   .how-it-works {
     margin-top: 70px;
     min-width: $desktop-size;
-    max-width: 100%;
-    padding-right: 3.08%;
+    max-width: $desktop-size;
+    padding-right: 40px;
     padding-bottom: 0;
-    padding-left: 3.08%;
+    padding-left: 40px;
 
     border-bottom: none;
   }

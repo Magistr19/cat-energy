@@ -121,9 +121,21 @@
     }
   }
 
+  .inner-page .main-nav__item {
+    a {
+      color: $font-color-black;
+    }
+  }
+
   .main-nav__item--current {
     &::after {
       background-color: #ffffff;
+    }
+  }
+
+  .inner-page .main-nav__item--current {
+    &::after {
+      background-color: #68b738;
     }
   }
 }

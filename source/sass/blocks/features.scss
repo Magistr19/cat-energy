@@ -226,9 +226,10 @@
 @media (min-width: $desktop-size) {
   .features {
     min-width: $desktop-size;
-    max-width: 100%;
-    padding-right: 3.08%;
-    padding-left: 3.08%;
+    max-width: $desktop-size;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 47px;
   }
 
