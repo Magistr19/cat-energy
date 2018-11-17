@@ -18,7 +18,7 @@
   input,
   textarea {
     box-sizing: border-box;
-    width: 100%;
+    flex-grow: 1;
     min-width: 40px;
     height: 45px;
     padding-right: 40px;
