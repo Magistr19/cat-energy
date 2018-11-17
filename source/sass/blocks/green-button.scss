@@ -5,7 +5,7 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  min-height: 40px;
+  height: 40px;
 
   font-size: 14px;
   line-height: 18px;
@@ -39,6 +39,16 @@
   line-height: 20px;
 }
 
+.green-button--product-order {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.green-button--addition-product {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @media (min-width: $tablet-size) {
   .green-button {
     width: 245px;
@@ -50,10 +60,33 @@
   .green-button--form-sbmt {
     width: 283px;
   }
+
+  .green-button--product-order {
+    font-size: 16px;
+    line-height: 20px;
+    width: 76.85%;
+    height: 40px;
+    align-self: center;
+  }
+
+  .green-button--addition-product {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    height: 40px;
+  }
 }
 
 @media (min-width: $desktop-size) {
   .green-button--form-sbmt {
     width: 570px;
+  }
+
+  .green-button--product-order {
+    width: 68.98%;
+  }
+
+  .green-button--addition-product {
+    width: 245px;
   }
 }

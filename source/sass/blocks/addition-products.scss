@@ -1,0 +1,264 @@
+.addition-products {
+  padding-top: 28px;
+  padding-bottom: 35px;
+}
+
+.addition-products__title {
+  @include h-reset;
+}
+
+.addition-products__container {
+  margin-right: $mobile-side-indent;
+  margin-left: $mobile-side-indent;
+}
+
+.addition-products__table {
+  @include table-reset;
+
+  width: 100%;
+  margin-top: 28px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  tr:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 17px;
+
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  td {
+    display: block;
+  }
+}
+
+.addition-products__name {
+  width: 100%;
+  margin-bottom: 11px;
+
+  h3 {
+    @include h-reset;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+  }
+}
+
+.addition-products__info {
+  width: 50%;
+
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.addition-products__price {
+  width: 50%;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  color: #444444;
+}
+
+.addition-products__order-btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.addition-products__promo {
+  position: relative;
+
+  width: 280px;
+  height: 290px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #6fb346;
+  background-image: url(../img/products-promo.jpg);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: calc(50% - 27px);
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url(../img/promo-gift.svg);
+  }
+}
+
+.addition-products__promo-info {
+  @include p-reset;
+
+  position: absolute;
+  bottom: 45px;
+  left: calc(50% - 85px);
+
+  width: 170px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-size) {
+  .addition-products {
+    padding-top: 63px;
+    padding-bottom: 80px;
+  }
+
+  .addition-products__container {
+    margin-right: $tablet-side-indent;
+    margin-left: $tablet-side-indent;
+  }
+
+  .addition-products__table {
+    margin-top: 80px;
+
+    tr {
+      padding-left: 5.37%;
+      padding-right: 5.37%;
+      padding-top: 25px;
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
+      padding-bottom: 27px;
+    }
+  }
+
+  .addition-products__name {
+    width: 62.5%;
+    h3 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .addition-products__info {
+    width: 23.75%;
+    font-size: 16px;
+    line-height: 20px;
+    align-self: center;
+    text-align: right;
+  }
+
+  .addition-products__price {
+    width: 13.75%;
+    font-size: 16px;
+    line-height: 20px;
+    align-self: center;
+  }
+
+  .addition-products__promo {
+    width: 708px;
+    height: 200px;
+    background-image: url(../img/products-promo-tablet.jpg);
+    margin-top: 70px;
+
+    &::before {
+      left: 91px;
+      top: 65px;
+    }
+  }
+
+  .addition-products__promo-info {
+    left: 423px;
+    bottom: 68px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .addition-products {
+    padding-top: 73px;
+    padding-bottom: 85px;
+  }
+
+  .addition-products__container {
+    width: $desktop-size;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $desktop-side-indent;
+    padding-right: $desktop-side-indent;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 83px;
+  }
+
+  .addition-products__table {
+    width: 895px;
+    margin-top: 0;
+
+    tr {
+      border-left: none;
+      border-right: none;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 15px;
+      padding-bottom: 16px;
+    }
+  }
+
+  .addition-products__name {
+    width: 325px;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  .addition-products__info {
+    width: 244px;
+    text-align: left;
+    align-self:stretch;
+    align-self: center;
+  }
+
+  .addition-products__price {
+    text-align: left;
+    width: 80px;
+    align-self:stretch;
+    align-self: center;
+  }
+
+  .addition-products__order-btn {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .addition-products__promo {
+    width: 245px;
+    min-height: 289px;
+    height: auto;
+    background-image: url(../img/products-promo.jpg);
+    background-repeat: no-repeat;
+    background-position: -30px -10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+
+    &::before {
+      left: 96px;
+    }
+  }
+
+  .addition-products__promo-info {
+    left: 43px;
+    bottom: 43px;
+    text-align: center;
+  }
+}

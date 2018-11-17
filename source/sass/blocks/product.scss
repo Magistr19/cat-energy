@@ -1,0 +1,141 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: $mobile-side-indent;
+  padding-bottom: 24px;
+  padding-left: $mobile-side-indent;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.product__image-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.product__content-container {
+  width: 50%;
+  max-width: 190px;
+}
+
+.product__name {
+  @include h-reset;
+
+  margin-top: 23px;
+  margin-right: 40px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.product__table {
+  @include table-reset;
+
+  width: 100%;
+  margin-top: 11px;
+
+  border-collapse: 0;
+  border-spacing: 0;
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  td {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .product {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 45.76%;
+    padding-right: 0;
+    padding-bottom: 40px;
+    padding-left: 0;
+
+    background-color: #f2f2f2;
+    border-bottom: none;
+  }
+
+  .product__image-container {
+    align-items: flex-end;
+    max-width: none;
+    margin-top: -80px;
+    height: 208px;
+    max-height: 208px;
+  }
+
+  .product__content-container {
+    width: auto;
+    max-width: none;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__name {
+    width: 41.5%;
+    margin-top: 36px;
+    margin-bottom: 19px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .product__table {
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: 33px;
+    padding-right: 11.73%;
+    padding-left: 11.73%;
+
+    tr {
+      padding-top: 8px;
+      padding-bottom: 7px;
+
+      font-size: 16px;
+      line-height: 16px;
+
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .product__order-btn {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .product {
+    width: 245px;
+  }
+
+  .product__name {
+    width: 57%;
+    margin-bottom: 16px;
+  }
+
+  .product__table {
+    padding-left: 15.51%;
+    padding-right: 15.51%;
+  }
+}

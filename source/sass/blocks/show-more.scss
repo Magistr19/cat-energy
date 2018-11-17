@@ -1,0 +1,124 @@
+.show-more {
+  position: relative;
+
+  padding-top: 79px;
+  padding-right: $mobile-side-indent;
+  padding-bottom: 24px;
+  padding-left: $mobile-side-indent;
+
+  border-bottom: 1px solid #ededed;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: calc(50% - 1px);
+
+    width: 2px;
+    height: 30px;
+
+    background-color: #d3d3d3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 41px;
+    left: calc(50% - 15px);
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #d3d3d3;
+  }
+}
+
+.show-more__title {
+  @include h-reset;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.show-more__tip {
+  display: block;
+  margin-top: 9px;
+
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  font-style: normal;
+}
+
+.show-more__button-show {
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-size) {
+  .show-more {
+    border: 1px solid #e6e6e6;
+    padding-bottom: 40px;
+    padding-left: 5.24%;
+    padding-right: 5.24%;
+    width: 45.76%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: 163px;
+
+    &::before {
+      top: 55px;
+      height: 60px;
+    }
+
+    &::after {
+      top: 84px;
+      width: 60px;
+      left: calc(50% - 30px);
+    }
+  }
+
+  .show-more__title {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 54.44%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .show-more__tip {
+    font-size: 16px;
+    margin-top: 25px;
+    width: 68.27%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .show-more__button-show {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .show-more {
+    width: 245px;
+    padding-top: 167px;
+    padding-left: 38px;
+    padding-right: 38px;
+    box-sizing: border-box;
+  }
+
+  .show-more__title {
+    width: 150px;
+  }
+
+  .show-more__tip {
+    width: 170px;
+  }
+}

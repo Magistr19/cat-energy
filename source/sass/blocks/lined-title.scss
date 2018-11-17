@@ -30,6 +30,10 @@
   }
 }
 
+.lined-title--addition-products {
+  margin-right: $mobile-side-indent;
+}
+
 @media (min-width: $tablet-size) {
   .lined-title {
     display: flex;
